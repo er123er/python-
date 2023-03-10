@@ -1,0 +1,430 @@
+2023-03-09 21:32:45 [scrapy.utils.log] INFO: Scrapy 2.8.0 started (bot: archdaily)
+2023-03-09 21:32:45 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:34:34) [MSC v.1928 32 bit (Intel)], pyOpenSSL 23.0.0 (OpenSSL 3.0.8 7 Feb 2023), cryptography 39.0.1, Platform Windows-10-10.0.22621-SP0
+2023-03-09 21:32:45 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'archdaily',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_ENABLED': False,
+ 'LOG_FILE': 'film.log',
+ 'NEWSPIDER_MODULE': 'archdaily.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['archdaily.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-03-09 21:32:45 [asyncio] DEBUG: Using selector: SelectSelector
+2023-03-09 21:32:45 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-03-09 21:32:45 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-03-09 21:32:45 [scrapy.extensions.telnet] INFO: Telnet Password: fe1c657e694b20d0
+2023-03-09 21:32:45 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-03-09 21:32:46 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'archdaily.middlewares.RandoUserAgent',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-03-09 21:32:46 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'archdaily.middlewares.RandoUserAgent',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-03-09 21:32:46 [scrapy.middleware] INFO: Enabled item pipelines:
+['archdaily.pipelines.ArchdailyPipeline']
+2023-03-09 21:32:46 [scrapy.core.engine] INFO: Spider opened
+2023-03-09 21:32:46 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-03-09 21:32:46 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-03-09 21:32:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.archdaily.cn/search/api/v1/cn/projects> (referer: https://www.archdaily.cn/search/cn/projects?ad_source=jv-header&ad_name=main-menu)
+2023-03-09 21:32:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.archdaily.cn/cn/997521/cang-zhai-mao-nu-shi-jia-jin-qiu-ye-jian-zhu-gong-zuo-shi?ad_source=search&ad_medium=projects_tab> (referer: https://www.archdaily.cn/search/cn/projects?ad_source=jv-header&ad_name=main-menu)
+2023-03-09 21:32:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.archdaily.cn/cn/997521/cang-zhai-mao-nu-shi-jia-jin-qiu-ye-jian-zhu-gong-zuo-shi?ad_source=search&ad_medium=projects_tab>
+None
+2023-03-09 21:32:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.archdaily.cn/cn/997611/san-zhai-fxian-sheng-jia-jin-qiu-ye-jian-zhu-gong-zuo-shi?ad_source=search&ad_medium=projects_tab> (referer: https://www.archdaily.cn/search/cn/projects?ad_source=jv-header&ad_name=main-menu)
+2023-03-09 21:32:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.archdaily.cn/cn/997611/san-zhai-fxian-sheng-jia-jin-qiu-ye-jian-zhu-gong-zuo-shi?ad_source=search&ad_medium=projects_tab>
+None
+2023-03-09 21:33:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.archdaily.cn/cn/997290/kan-sa-si-cheng-guo-ji-ji-chang-xin-hang-zhan-lou-skidmore-owings-and-merrill?ad_source=search&ad_medium=projects_tab> (referer: https://www.archdaily.cn/search/cn/projects?ad_source=jv-header&ad_name=main-menu)
+2023-03-09 21:33:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.archdaily.cn/cn/997290/kan-sa-si-cheng-guo-ji-ji-chang-xin-hang-zhan-lou-skidmore-owings-and-merrill?ad_source=search&ad_medium=projects_tab>
+None
+2023-03-09 21:33:00 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-03-09 21:33:00 [scrapy.core.engine] ERROR: Scraper close failure
+Traceback (most recent call last):
+  File "E:\code\py3.8\venv\lib\site-packages\twisted\internet\defer.py", line 892, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "E:\code\py3.8\archdaily\archdaily\pipelines.py", line 28, in close_spider
+    f.write(''.join(inTotal))
+TypeError: sequence item 0: expected str instance, int found
+2023-03-09 21:33:00 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1917,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 725025,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 4,
+ 'elapsed_time_seconds': 13.865484,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 3, 9, 13, 33, 0, 308828),
+ 'httpcompression/response_bytes': 3025403,
+ 'httpcompression/response_count': 4,
+ 'item_scraped_count': 3,
+ 'log_count/DEBUG': 10,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 1,
+ 'response_received_count': 4,
+ 'scheduler/dequeued': 4,
+ 'scheduler/dequeued/memory': 4,
+ 'scheduler/enqueued': 4,
+ 'scheduler/enqueued/memory': 4,
+ 'start_time': datetime.datetime(2023, 3, 9, 13, 32, 46, 443344)}
+2023-03-09 21:33:00 [scrapy.core.engine] INFO: Spider closed (finished)
+2023-03-09 21:33:29 [scrapy.utils.log] INFO: Scrapy 2.8.0 started (bot: archdaily)
+2023-03-09 21:33:29 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:34:34) [MSC v.1928 32 bit (Intel)], pyOpenSSL 23.0.0 (OpenSSL 3.0.8 7 Feb 2023), cryptography 39.0.1, Platform Windows-10-10.0.22621-SP0
+2023-03-09 21:33:29 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'archdaily',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_ENABLED': False,
+ 'LOG_FILE': 'film.log',
+ 'NEWSPIDER_MODULE': 'archdaily.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['archdaily.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-03-09 21:33:29 [asyncio] DEBUG: Using selector: SelectSelector
+2023-03-09 21:33:29 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-03-09 21:33:29 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-03-09 21:33:29 [scrapy.extensions.telnet] INFO: Telnet Password: 34f05ba65cd221b4
+2023-03-09 21:33:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-03-09 21:33:29 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'archdaily.middlewares.RandoUserAgent',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-03-09 21:33:29 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'archdaily.middlewares.RandoUserAgent',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-03-09 21:33:29 [scrapy.middleware] INFO: Enabled item pipelines:
+['archdaily.pipelines.ArchdailyPipeline']
+2023-03-09 21:33:29 [scrapy.core.engine] INFO: Spider opened
+2023-03-09 21:33:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-03-09 21:33:29 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-03-09 21:33:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.archdaily.cn/search/api/v1/cn/projects> (referer: https://www.archdaily.cn/search/cn/projects?ad_source=jv-header&ad_name=main-menu)
+2023-03-09 21:33:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.archdaily.cn/cn/997611/san-zhai-fxian-sheng-jia-jin-qiu-ye-jian-zhu-gong-zuo-shi?ad_source=search&ad_medium=projects_tab> (referer: https://www.archdaily.cn/search/cn/projects?ad_source=jv-header&ad_name=main-menu)
+2023-03-09 21:33:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.archdaily.cn/cn/997611/san-zhai-fxian-sheng-jia-jin-qiu-ye-jian-zhu-gong-zuo-shi?ad_source=search&ad_medium=projects_tab>
+None
+2023-03-09 21:33:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.archdaily.cn/cn/997521/cang-zhai-mao-nu-shi-jia-jin-qiu-ye-jian-zhu-gong-zuo-shi?ad_source=search&ad_medium=projects_tab> (referer: https://www.archdaily.cn/search/cn/projects?ad_source=jv-header&ad_name=main-menu)
+2023-03-09 21:33:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.archdaily.cn/cn/997521/cang-zhai-mao-nu-shi-jia-jin-qiu-ye-jian-zhu-gong-zuo-shi?ad_source=search&ad_medium=projects_tab>
+None
+2023-03-09 21:33:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.archdaily.cn/cn/997290/kan-sa-si-cheng-guo-ji-ji-chang-xin-hang-zhan-lou-skidmore-owings-and-merrill?ad_source=search&ad_medium=projects_tab> (referer: https://www.archdaily.cn/search/cn/projects?ad_source=jv-header&ad_name=main-menu)
+2023-03-09 21:33:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.archdaily.cn/cn/997290/kan-sa-si-cheng-guo-ji-ji-chang-xin-hang-zhan-lou-skidmore-owings-and-merrill?ad_source=search&ad_medium=projects_tab>
+None
+2023-03-09 21:33:46 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-03-09 21:33:46 [scrapy.core.engine] ERROR: Scraper close failure
+Traceback (most recent call last):
+  File "E:\code\py3.8\venv\lib\site-packages\twisted\internet\defer.py", line 892, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "E:\code\py3.8\archdaily\archdaily\pipelines.py", line 29, in close_spider
+    f.write(''.join(inTotal))
+TypeError: sequence item 0: expected str instance, int found
+2023-03-09 21:33:46 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2033,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 725025,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 4,
+ 'elapsed_time_seconds': 16.477554,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 3, 9, 13, 33, 46, 415490),
+ 'httpcompression/response_bytes': 3025403,
+ 'httpcompression/response_count': 4,
+ 'item_scraped_count': 3,
+ 'log_count/DEBUG': 10,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 1,
+ 'response_received_count': 4,
+ 'scheduler/dequeued': 4,
+ 'scheduler/dequeued/memory': 4,
+ 'scheduler/enqueued': 4,
+ 'scheduler/enqueued/memory': 4,
+ 'start_time': datetime.datetime(2023, 3, 9, 13, 33, 29, 937936)}
+2023-03-09 21:33:46 [scrapy.core.engine] INFO: Spider closed (finished)
+2023-03-10 09:29:29 [scrapy.utils.log] INFO: Scrapy 2.8.0 started (bot: archdaily)
+2023-03-10 09:29:29 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:34:34) [MSC v.1928 32 bit (Intel)], pyOpenSSL 23.0.0 (OpenSSL 3.0.8 7 Feb 2023), cryptography 39.0.1, Platform Windows-10-10.0.22621-SP0
+2023-03-10 09:29:29 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'archdaily',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'film.log',
+ 'NEWSPIDER_MODULE': 'archdaily.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['archdaily.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-03-10 09:29:29 [asyncio] DEBUG: Using selector: SelectSelector
+2023-03-10 09:29:29 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-03-10 09:29:29 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-03-10 09:29:29 [scrapy.extensions.telnet] INFO: Telnet Password: ebfc63c01b92cd74
+2023-03-10 09:29:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-03-10 09:29:30 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'archdaily.middlewares.RandoUserAgent',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-03-10 09:29:30 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'archdaily.middlewares.RandoUserAgent',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-03-10 09:29:30 [scrapy.middleware] INFO: Enabled item pipelines:
+['archdaily.pipelines.ArchdailyPipeline']
+2023-03-10 09:29:30 [scrapy.core.engine] INFO: Spider opened
+2023-03-10 09:29:30 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-03-10 09:29:30 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-03-10 09:29:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.archdaily.cn/search/api/v1/cn/projects> (referer: https://www.archdaily.cn/search/cn/projects?ad_source=jv-header&ad_name=main-menu)
+2023-03-10 09:29:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.archdaily.cn/cn/997521/cang-zhai-mao-nu-shi-jia-jin-qiu-ye-jian-zhu-gong-zuo-shi?ad_source=search&ad_medium=projects_tab> (referer: https://www.archdaily.cn/search/cn/projects?ad_source=jv-header&ad_name=main-menu)
+2023-03-10 09:29:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.archdaily.cn/cn/997521/cang-zhai-mao-nu-shi-jia-jin-qiu-ye-jian-zhu-gong-zuo-shi?ad_source=search&ad_medium=projects_tab>
+{'branch': {'舱宅，毛女士家 / 金秋野建筑工作室': {'html1': {'建筑师:': '金秋野建筑工作室',
+                                             '摄影师 :': '孙海霆',
+                                             '面积 :': '117',
+                                             '项目年份 :': '2022'},
+                                   'html2': {'City :': '北京',
+                                             'Country :': '',
+                                             '主创建筑师 :': '金秋野',
+                                             '设计团队 :': '金秋野，刘力源，高蕾蕾，张彩阳，许曦幻'},
+                                   'str_text': '业主家里住着六口人，除此之外还有一只和尚鹦鹉、四只龟、一些鱼和花需要安放，这些花鸟鱼虫对男主人来说至关重要，特别是那只鹦鹉，就像家人一样，当然龟和鱼也都不能忽视，最好安排在一起，大家其乐融融，彼此随时都在对方的眼皮子底下。这是毛女士家独特的设计要求，我们的空间规划就按这个来落笔。户型是个大平层，但由于剪力墙结构的限制，客厅南侧的墙壁将整个平面分成南北两部分，彼此缺乏真正的沟通。想要在两个部分之间建立空间关联是挺难的，那就只有建立视线关联。线性空间序列被破坏殆尽，那核心空间的重要性就更加凸显。我们保留了方案初稿中鸟笼的位置，使它成为不折不扣的全屋中心。鸟笼挨着玄关，玄关通过一道毛玻璃屏风与盥洗区毗邻，屏风的侧面就是鸟笼的一条边，在这里做了个小方窗，回家就可以隔着玻璃跟小鸟打招呼，从客厅也可了解玄关里发生了些什么。除此外，客厅就是一个相对完整、自成一体的开放空间了。男主人作为自媒体创业者，很多生活场景都是围绕电视展开的。这里是直播间，也是影音室、游戏厅和聚会空间。所以不仅要有舒服的沙发，也要环绕立体声、各种数字游戏设备和电视盒子一应俱全。这个空间理应位于起居室中央，并在沙发和电视之间留出通往其他部分的通路。小朋友的房间放在客厅西南角，把它抬高650mm，成为全屋的制高点。小床向着露台和大玻璃窗，有很好的视野；书桌朝向客厅，能看到全家人其乐融融的画面又自成一体，下面是客厅的电视区。小朋友房间的入口是层层叠叠的大理石台阶，嵌入一个会发光的草缸，连着一排大衣柜，像船长的驾驶舱。沙发区西北向，正对鸟笼的位置，是一个独立阳台，规规矩矩，小巧玲珑，从一开始就被当作花鸟鱼虫的养殖-展示场所。低处设置龟池，与下水连通，自带清洁设备；中间嵌入鱼缸，高处养花草：一个立体的微型植物园，小朋友的家庭自然历史博物馆。这么一布置，起居室可以说是其乐融融了。坐在中间的沙发区，身后是餐桌边传来的欢声笑语；抬起头，小朋友在“舱体”中做功课；向左看，鹦鹉在笼子里跳上跳下；向右看，乌龟在池边打瞌睡，鱼儿在花草的枝叶下自在畅游。完整的大空间以沙发区为核心划分出似有若无的八个区域，将家庭生活的主要功能组织在一起，小朋友站在最高处，将这一切尽收眼底。'}},
+ 'title': '舱宅，毛女士家 / 金秋野建筑工作室'}
+2023-03-10 09:29:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.archdaily.cn/cn/997611/san-zhai-fxian-sheng-jia-jin-qiu-ye-jian-zhu-gong-zuo-shi?ad_source=search&ad_medium=projects_tab> (referer: https://www.archdaily.cn/search/cn/projects?ad_source=jv-header&ad_name=main-menu)
+2023-03-10 09:29:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.archdaily.cn/cn/997290/kan-sa-si-cheng-guo-ji-ji-chang-xin-hang-zhan-lou-skidmore-owings-and-merrill?ad_source=search&ad_medium=projects_tab> (referer: https://www.archdaily.cn/search/cn/projects?ad_source=jv-header&ad_name=main-menu)
+2023-03-10 09:29:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.archdaily.cn/cn/997611/san-zhai-fxian-sheng-jia-jin-qiu-ye-jian-zhu-gong-zuo-shi?ad_source=search&ad_medium=projects_tab>
+{'branch': {'三一宅，F先生家 / 金秋野建筑工作室': {'html1': {'建筑师:': '金秋野建筑工作室',
+                                              '摄影师 :': '高蕾蕾孙海霆陈向飞柳汀洲',
+                                              '面积 :': '80',
+                                              '项目年份 :': '2022'},
+                                    'html2': {'City :': '北京',
+                                              'Country :': '',
+                                              '主创建筑师 :': '高蕾蕾',
+                                              '设计团队 :': '孙海霆、陈向飞、柳汀洲 、高蕾蕾'},
+                                    'str_text': '这是一个平和有爱的四口之家。爸爸妈妈都是工程师，喜欢读书、运动，一双可爱的儿女，热爱小动物。随着孩子的长大，居住条件亟待改善。由于预算等多种条件的限制，此项目中，我们尝试了一种新的工作模式：工作室为业主提供设计咨询，由业主本人完成方案实施和施工监督。在这个过程中，我们与业主共同讨论方案，过程中协助解决问题。该项目位于北京一栋20世纪80年代中期建造的塔式住宅内，户型为三室一厅。入口是一个昏暗的小黑厅，北侧采光被厨房与卫生间阻隔。南卧和东北卧各自拥有一条长长的阳台，堆放杂物。西北次卧带一个附属储物间，正对入口黑厅。三个卧室各自为营，唯一的小厅前后左右共有大小六扇门，疲于被四方人流穿越。整个住所缺乏家人活动与沟通的共享空间，也无法满足家中老人偶来住宿的需求。方案从功能整合出发，将一家四口的卧室紧密布置在西侧一列，放松东侧空间，将其化零为整，形成连续的公共区域。南侧的主卧，保留了原有宽敞明亮的状态。为了满足男主人夜间加班，不影响和打搅家人的诉求，在全屋的尽端，阳台的把脚，设置独立的办公空间。阳台与卧室之间，立一处60公分高的小柜，阳台侧做出一块冬天可以猫起来，靠着暖气晒太阳的小榻。同时，这个区域给了屋内座椅一个背向，更是在卧室与阳台之间形成一处框景。西北次卧，去掉储物的小黑间，塞入一个2米见方的小房子做妹妹卧室，剩下的空间留给哥哥。妹妹房地面抬高半米，底下用以储物。小床宽1米，橡木定制，高出妹妹房“地面”50公分。床下空间6分给哥哥，4分给妹妹。这样，哥哥屋拥有了一个1米高，2米宽，60公分深的衣橱，妹妹也拥有了挂自己裙子的小柜。妹妹床侧，起小段白跺加两列方棂格共60公分高做围挡，余者留空，接西窗之光，引西窗之风入屋。哥哥屋与妹妹房在保持独立的同时，拥有通透的视线，相互借景。北墙为哥哥床侧定制了1.2米高橡木护墙板，隔绝凉气，增强包裹感。哥哥靠墙，妹妹凭栏，两孩儿一高一低，对望嬉笑。晚上可以拉上帘子，各自成为独立区域。西侧解决了家庭生活的私密性与睡眠需求之后，整个东侧便容纳餐厨、盥洗、读书、弹琴与娱乐等功能，全部敞开了。北侧阳台对应厨房分割出炒菜区域，使烟程变短，这样厨房可径向打开，不再设门，将室外光线完整地引导至餐桌上。在业主坚持下，卫生间门移至北阳台，门厅处以磨砂玻璃砖做隔档，透光不透人。一日之中，小小门厅，光色纷呈，不再是往日的小黑厅。原先的北侧大卧，变成了全屋的公共生活区。业主有800册藏书，不需要沙发与电视，全家偶用投影仪一起看电影。我们用一道40公分宽皮纸糊的光笼，将公区分为两个事实上连通、心理上分隔的部分。南侧是阅读与游戏区，整面书架占领南墙，接一条长长的桌板，让出地面空间，供小儿蹦跳，或趴在地上游戏，玩累了便看书。光笼往北到阳台墙垛之间，布1.5x2米的炕间，平日里是家人坐在一起聊天喝茶的场所。若家里老人留宿在此，可将天花板上的轨道窗帘拉起，屋内便又多出一处独立的就寝空间。钢琴贴墙摆放，与榻榻米之间尚有1米余宽，供人通行。炕间与北阳台之间的墙垛上，覆一实木大板，便于叠衣置物。在公区进入寝所的转换处，有一条1.5米长，约1米宽的小过廊，我们称其为“胡同”。使用红、黄、蓝三种色彩涂刷天花和墙壁，界定出这个“胡同”的不同走向。色块的拼接方式一方面破除了方盒子的体积感，同时又创造了新的体积，人在其中，仿佛置身于堆叠在一起的若干彩色大立方的缝隙中。主卧红色、妹妹房黄色、哥哥屋蓝色，每个门洞前，都有不同的色彩迎接。三色的界面组成一个独立的空间装置，使公共与私密的转换枢纽成为一个特殊的连通器，把居室中最消极的部分转变为日常风景。妹妹房正对哥哥屋的墙面，涂浅宝石绿，做寝室背景。如何在有效分隔居室空间的同时，能够让视线与空气流通起来，一直是我们探讨和实验的重点。正对门厅，全家地势最高的妹妹房向外，留有一个圆形的瞭望口，可以让视线越过“胡同”，继而穿过门厅墙体的圆洞，最后被尽端处彩色的亚克力壁灯接住。随着人的移动，两道圆洞彼此交错，图像在月环食与新月之间切换。“胡同”与餐桌之间，亦打开了一个椭圆形洞口。坐在餐桌旁，通过这个椭圆形，可以斜斜地将目光抛在哥哥屋的西窗外。妹妹喜欢站在胡同里，趴在椭圆洞口，向门厅张望。这条全屋最长的视线，连着阅读区与妹妹屋，穿过三个门洞，三种色彩，直至在妹妹升降小桌上那盏方头方脑的大红色小鹿灯上锚定下来。这条约10米长的通路，也变成妹妹与哥哥撒欢奔跑的路径。有小孩的家庭，尤其是二孩之家，常常面临着地面玩具凌乱，墙面乱涂乱画的问题。除了留出足够的空间供小朋友玩闹、一定的路线让他们跑跳，还要考虑利用其他的零散空间，给小朋友们“搞创作”。玻璃砖旁，正好用方钢框出宽60公分，高2米的区域做乐高墙。这是一件每天大家一进门第一眼便能看到，且会随小朋友的想象力日常更新的作品。“胡同”里的白区都二次涂刷了白色水性漆，专供小朋友在自己门口涂鸦。小孩儿有了自己的创作与展示空间，家里其他墙面，便“保住”了。妹妹喜欢探望小动物，哥哥喜欢收集羽毛。这次也特意在各种器皿的选择上与他们的兴趣共鸣：邀请了斑马、火烈鸟、金钱豹等各种动物，出镜水杯、盘子或花瓶。哥哥也着迷宇航与太空，我们和妈妈便一起选了星球灯挂在哥哥屋。妹妹这边，躺在自己的小木床上，望厅赏“月”，扭头观“星”，得意洋洋。在本次项目中，工作室与业主以全新的工作方式，协力打造、共同完成这栋色彩明丽的快乐小屋。对于我们来说，施工标准和细节处理都是最为要紧的事，这种工作模式下难言完美。但业主在选择施工方案、探索产品方面的工作，也给我们带来了一些意外的惊喜。色有三元，汇为一体；居寝三间，合家如一。'}},
+ 'title': '三一宅，F先生家 / 金秋野建筑工作室'}
+2023-03-10 09:29:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.archdaily.cn/cn/997290/kan-sa-si-cheng-guo-ji-ji-chang-xin-hang-zhan-lou-skidmore-owings-and-merrill?ad_source=search&ad_medium=projects_tab>
+{'branch': {'最方便无障碍，堪萨斯城国际机场新航站楼 / Skidmore, Owings & Merrill': {'html1': {'厂家 :': '',
+                                                                           '建筑师:': 'Skidmore, '
+                                                                                   'Owings '
+                                                                                   '& '
+                                                                                   'Merrill',
+                                                                           '摄影师 :': 'Lucas '
+                                                                                    'Blair '
+                                                                                    'Simpson '
+                                                                                    '© '
+                                                                                    'SOM',
+                                                                           '面积 :': '101265',
+                                                                           '项目年份 :': '2023'},
+                                                                 'html2': {'ADA/无障碍 :': 'Michele '
+                                                                                        '& '
+                                                                                        'Associates',
+                                                                           'City :': '堪萨斯城',
+                                                                           'Country :': '',
+                                                                           'LEED顾问 :': 'Greenwood '
+                                                                                       'Consulting',
+                                                                           '交通规划 :': 'Olsson',
+                                                                           '公共艺术顾问 :': 'CAI',
+                                                                           '冲击荷载 :': 'Thornton '
+                                                                                     'Tomasetti',
+                                                                           '声学顾问 :': '奥雅纳',
+                                                                           '建筑顾问 :': 'HJM '
+                                                                                     'Architect, '
+                                                                                     'Wellner '
+                                                                                     'Architects, '
+                                                                                     'DRAW '
+                                                                                     'Architecture '
+                                                                                     '+ '
+                                                                                     'Urban '
+                                                                                     'Design',
+                                                                           '景观设计 :': 'Land3 '
+                                                                                     'Studio',
+                                                                           '木材顾问 :': 'Anthony '
+                                                                                     '& '
+                                                                                     'Associates',
+                                                                           '机电水暖 :': 'Henderson '
+                                                                                     'Engineers '
+                                                                                     'Inc.',
+                                                                           '标识设计 :': 'Entro',
+                                                                           '横向及垂直交通 :': 'Lerch '
+                                                                                        'Bates',
+                                                                           '泛光设计 :': 'Lightworks '
+                                                                                     'Content',
+                                                                           '特许权规划 :': 'ICF',
+                                                                           '硬件 :': 'Studio '
+                                                                                   '8',
+                                                                           '空侧土木工程 :': 'Garver, '
+                                                                                       '3T '
+                                                                                       'Design '
+                                                                                       '& '
+                                                                                       'Development, '
+                                                                                       'Argus '
+                                                                                       'Consulting, '
+                                                                                       'Custom '
+                                                                                       'Engineering, '
+                                                                                       'HG '
+                                                                                       'Consult, '
+                                                                                       'Liquid '
+                                                                                       'Automation '
+                                                                                       'Systems, '
+                                                                                       'SK '
+                                                                                       'Design '
+                                                                                       'Group, '
+                                                                                       'TREKK '
+                                                                                       'Design '
+                                                                                       'Group',
+                                                                           '空侧规划及土木评审 :': 'Arup',
+                                                                           '管理合伙人 :': 'Laura '
+                                                                                      'Ettelman, '
+                                                                                      'FAIA',
+                                                                           '结构工程 :': 'Preetam '
+                                                                                     'Biswas',
+                                                                           '结构工程顾问 :': 'Leigh '
+                                                                                       '& '
+                                                                                       'O’Kane, '
+                                                                                       'DuBois',
+                                                                           '航站楼规划及模型 :': 'TransSolutions',
+                                                                           '行李处理系统 :': 'BNP '
+                                                                                       'Associates',
+                                                                           '规范/消防安全 :': 'FSC',
+                                                                           '设计合伙人 :': 'Roger '
+                                                                                      'Duffy, '
+                                                                                      'FAIA; '
+                                                                                      'Colin '
+                                                                                      'Koop, '
+                                                                                      'AIA',
+                                                                           '设计负责人 :': 'Peter '
+                                                                                      'Lefkovits, '
+                                                                                      'AIA; '
+                                                                                      'Derek '
+                                                                                      'Moore, '
+                                                                                      'AIA, '
+                                                                                      'P.h.D',
+                                                                           '负责人 :': 'Jordan '
+                                                                                    'Pierce, '
+                                                                                    'AIA; '
+                                                                                    'Lindsay '
+                                                                                    'Allen, '
+                                                                                    'AIA',
+                                                                           '陆侧土木工程 :': 'Taliaferro '
+                                                                                       '& '
+                                                                                       'Browne '
+                                                                                       'Engineering '
+                                                                                       'Inc., '
+                                                                                       '3T '
+                                                                                       'Design '
+                                                                                       '& '
+                                                                                       'Development, '
+                                                                                       'Custom '
+                                                                                       'Engineering, '
+                                                                                       'HG '
+                                                                                       'Consult, '
+                                                                                       'DuBois, '
+                                                                                       'Leigh '
+                                                                                       '& '
+                                                                                       'O’Kane, '
+                                                                                       'Lightworks, '
+                                                                                       'Priority '
+                                                                                       'Engineers, '
+                                                                                       'SK '
+                                                                                       'Design '
+                                                                                       'Group',
+                                                                           '项目管理 :': 'Lindsay '
+                                                                                     'Allen, '
+                                                                                     'AIA',
+                                                                           '风道 :': 'CPP',
+                                                                           '高级负责人 :': 'Kirtan '
+                                                                                      'Patel, '
+                                                                                      'AIA',
+                                                                           '高级负责人，结构工程 :': 'Alexandra '
+                                                                                           'Thewis',
+                                                                           '鸟类控制 :': 'Bird '
+                                                                                     'Control '
+                                                                                     'Advisory'},
+                                                                 'str_text': '堪萨斯城国际机场（KCI）的新航站楼由 '
+                                                                             'SOM、Clark '
+                                                                             '| '
+                                                                             'Weitz '
+                                                                             '| '
+                                                                             'Clarkson '
+                                                                             '(CWC)、以及一个以女性为主体的顾问团队共同设计、规划、建造完成。这是一个针对现有机场的改造项目，并旨在成为最先进的旅行枢纽。这个约 '
+                                                                             '10000 '
+                                                                             '平方米的新建筑将取代原建于 '
+                                                                             '1972 '
+                                                                             '年、并已超出荷载的航站楼，并且该项目也将把原先的 '
+                                                                             '39 '
+                                                                             '个登机口扩张至 '
+                                                                             '50 '
+                                                                             '个登机口。这一项目显著地提高了该机场的客运能力，并重新构想了旅行体验，融入丰富的区域文化背景，将这一机场升华至可以包容所有人的开放场所。I '
+                                                                             '形的航站楼包含了两层：上层供出发旅客使用，下层供到达旅客使用，并且每一层都配备各自的通道及路缘。办理登机手续及进行安检的区域坐落在上层入口内侧，行李提取、海关、户外公共花园则聚集在下层。在通过安检后的空间，两个平行的中央零售大厅由一条人行通道连接，人们可以在此一览机场全景。安检区后的空间都位于二层，这一设计策略也为所有人创造了轻松的旅行体验。堪萨斯城国际机场新航站楼中的每一处都构造了引人入胜的体验。其入口是一个温馨友好、光线充足的空间，并搭配有宽敞的雨棚、玻璃及铝制立面、和富有表达力的 '
+                                                                             'Y '
+                                                                             '形柱。室内温暖的内饰材料包含了从铁杉天花板、到大理石水磨石地板等。此外，从原航站楼中被精心保留的一系列彩色、本地设计的马赛克再次运用，切割、铺设在新大厅的地板上，由此保留了人们对原始建筑的记忆。SOM '
+                                                                             '通过举办多次社区会议，与 '
+                                                                             'Edgemoor '
+                                                                             'Infrastructure '
+                                                                             '& '
+                                                                             'Real '
+                                                                             'Estate、CWC、及堪萨斯城的杭康部门合作，并和机场周边地区的居民进行交流，以确保创建一个让所有人觉得舒适、友好的航站楼。此外，这座城市发布了一项决议以要求这一新航站楼成为“世界最方便的无障碍机场”，并认为“包容性”应该成为机场改造设计的主旨。其中的每一处登机口桌椅、登记手续办理台、及问讯处都具有适合轮椅进出的高度。在旅行前，堪萨斯城航空旅行体验模拟器也将为对飞行之旅感到不熟悉、不舒服的乘客提供“试运行”机会。同时，机场设置了“静室”以让所有旅客可以在繁闹的机场享受一刻宁静。男女通用的卫生间、儿童五感娱乐室等设施将为所有人提供友好、包容的崭新机场体验。堪萨斯城国际机场新航站楼是美国中西部首个获得 '
+                                                                             'LEED '
+                                                                             'BD+C（新建物与新增大范围建筑提案）中新建成航站楼/广场项目类别四级金牌认证的项目，也是全美第二个获得该认证的建筑。这一大楼致力于在未来依靠可持续能源运营。现在，它完全依靠电力运作，而在未来，此处的太阳能农场将可以把机场运营所依赖的能源全数转换为绿色能源。此外，项目中的所有材料均来自当地，其中的木材饰面已通过森林管理委员会FSC的认证。新航站楼的整体规划还蕴含了一个全面的保护计划，由此保留旧设施中的所有树木及草地。'}},
+ 'title': '最方便无障碍，堪萨斯城国际机场新航站楼 / Skidmore, Owings & Merrill'}
+2023-03-10 09:29:39 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-03-10 09:29:39 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2115,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 725033,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 4,
+ 'elapsed_time_seconds': 9.378007,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 3, 10, 1, 29, 39, 925882),
+ 'httpcompression/response_bytes': 3025403,
+ 'httpcompression/response_count': 4,
+ 'item_scraped_count': 3,
+ 'log_count/DEBUG': 10,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 1,
+ 'response_received_count': 4,
+ 'scheduler/dequeued': 4,
+ 'scheduler/dequeued/memory': 4,
+ 'scheduler/enqueued': 4,
+ 'scheduler/enqueued/memory': 4,
+ 'start_time': datetime.datetime(2023, 3, 10, 1, 29, 30, 547875)}
+2023-03-10 09:29:39 [scrapy.core.engine] INFO: Spider closed (finished)
